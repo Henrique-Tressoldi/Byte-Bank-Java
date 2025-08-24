@@ -1,0 +1,33 @@
+
+public class ContaCorrente extends Conta {
+
+	public ContaCorrente(int agencia,int numero) {
+		super(agencia, numero);
+	}
+	
+	@Override
+	public boolean saca(double valor) {
+		// TODO Auto-generated method stub
+		return super.saca(valor + 0.2);
+	}
+	
+	@Override
+	public boolean transfere(double valor, Conta destino) {
+		// TODO Auto-generated method stub
+		return super.transfere(valor, destino);
+	}
+	
+	@Override
+	public void deposita(double valor) {
+		super.saldo += valor;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
